@@ -1,3 +1,3 @@
 # Salary-predictor
-Predicting salary
-hello
+//Predicting salary//
+
