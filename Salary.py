@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
-data=pd.read_csv('/Users/saishashetty/Desktop/Salary-predictor/PS.csv')
+data=pd.read_csv('PS.csv')
 
 X=data.iloc[:,1:2].values
 y=data.iloc[:,2].values
@@ -21,14 +21,14 @@ regressor2.fit(X_poly,y)
 
 plt.scatter(X,y,color='red')
 plt.plot(X,regressor.predict(X),color='blue')
-plt.title('Truth or bluff')
+plt.title('Truth or Bluff')
 plt.xlabel('Position')
 plt.ylabel('Salaries')
 plt.show()
 
 plt.scatter(X,y,color='red')
 plt.plot(X,regressor2.predict(poly.fit_transform(X)),color='blue')
-plt.title('Truth or bluff')
+plt.title('Truth or Bluff')
 plt.xlabel('Position')
 plt.ylabel('Salaries')
 plt.show()
